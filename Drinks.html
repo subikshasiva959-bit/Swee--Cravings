@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drinks</title>
+  <link rel="icon" href="images.jpg">
+</head>
+<body>
+  <center>
+    <h1>Warmed to Perfection</h1>
+    <p>
+      <q>Get your favorite meals delivered hot and fresh with Wander Bites.</q><br>
+      <b>From local favorites to global cuisines.</b><br>
+      <b>Fast, fresh, and reliable</b><br>
+      <i>Taste the flavor from your home.</i>
+    </p>
+  </center>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url("images (2).jpg") no-repeat center fixed;
+      background-size: cover;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    h1, p, q, b, i {
+      color: #111010;
+    }
+
+    .cakes-section {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: center;
+      gap: 15px;
+      row-gap: 40px;
+      padding: 15px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .item-card {
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      max-width: 280px;
+      width: 350px;
+      padding: 10px;
+    }
+
+    .item-card:hover {
+      transform: scale(1.02);
+    }
+
+    .item-card img {
+      width: 260px;
+      height: 320px;
+      border-radius: 15px;
+      border: 5px solid #eea4ae;
+      display: block;
+      object-fit: center;
+    }
+
+    .item-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .item-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .item-content p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .spacer-row {
+      grid-column: 1 / -1;
+      height: 7px; 
+    }
+
+    .spacer {
+      height: 30px;
+    }
+    </style>
+
+  <div class="cakes-section">
+    <div class="item-card">
+      <img src="Cookie and crem.jpg" alt="Cookie">
+      <div class="item-content">
+        <h3>Cookie and Cream Smoothie</h3>
+        <p>A rich harmony of cocoa crumbles and silky cream, indulgent and nostalgic in every sip.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Litchi.jpg" alt="Litchi">
+      <div class="item-content">
+        <h3>Litchi</h3>
+        <p>Delicate and fragrant, this floral fruit blend whisper of sweetness with a refreshing finish.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Blueberry.jpg" alt="Blueberry">
+      <div class="item-content">
+        <h3>Purple Haze</h3>
+        <p> Deep, juicy blueberries layered with subtle tartness a sophisticated berry infusion.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Tea.jpg" alt="Tea">
+      <div class="item-content">
+        <h3>Steep Dreams</h3>
+        <p> Aromatic and smooth, this perfectly steeped blend brings balance, warmth, and calm.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Peanut butter.jpg" alt="Peanut">
+      <div class="item-content">
+        <h3>Peanut Parade</h3>
+        <p>Creamy roasted peanut butter, slow-ground to perfection naturally rich and nutty profile.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Buttermilk.jpg" alt="Buttermilk">
+      <div class="item-content">
+        <h3>Cream Whisper</h3>
+        <p>Light, tangy, and velvety smooth a timeless cultured classic, elegantly balanced.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Muskmelon.jpg" alt="Muskmelon">
+      <div class="item-content">
+        <h3>Melon Muse</h3>
+        <p>Lush melon essence with a honeyed touch, cool and mellow with every drop.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Strawberry Juice.jpg" alt="Berry">
+      <div class="item-content">
+        <h3>Strawberry Sonata</h3>
+        <p>Juicy, sun-ripened strawberries blended into a soft, fruity elegance.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Tender.jpg" alt="Tender">
+      <div class="item-content">
+        <h3>Tropic Pearl</h3>
+        <p>Pure coconut water with a gentle sweetness smooth, tropical, and hydrating.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Sugarcane.jpg" alt="Sugarcane">
+      <div class="item-content">
+        <h3>Sweet Cane Elixir</h3>
+        <p>Fresh-pressed sweetness from the field, earthy and vibrant with a rustic charm.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Kiwi.webp" alt="Kiwi">
+      <div class="item-content">
+        <h3>Emerald Zing</h3>
+        <p>Tart and tropical with a bright green kick — crisp, energizing, and refreshing.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Vanilla.jpg" alt="Vanilla">
+      <div class="item-content">
+        <h3>Ivory Silk</h3>
+        <p>Classic vanilla with a velvety smoothness and creamy warmth, subtly sweet and elegant.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Sarbath.jpg" alt="Sarbath">
+      <div class="item-content">
+        <h3>Sarbath Royale</h3>
+        <p> A spiced herbal fusion with citrus and traditional, aromatic, and deeply refreshing.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Orange.jpg" alt="Orange">
+      <div class="item-content">
+        <h3>Amber Splash</h3>
+        <p>adiant citrus with a sweet tang, bursting with zest and sunny flavor.</p>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="Dry fruit.webp" alt="Dry">
+      <div class="item-content">
+        <h3>Nutrient Gold</h3>
+        <p>A rich blend of nuts and dried fruits, full-bodied and nourishing with regal depth.</p>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <div style="flex: 1; min-width: 220px; margin-bottom: 20px;">
+      <h3 style="color: #262261;">Contact Us</h3>
+      <p>Email: <a href="mailto:info@wanderbites.org" style="color: #060101; text-decoration: none;">info@wanderbites.org</a></p>
+      <p>Phone: +1 234 567 890</p>
+      <p>Location: Earth, Milky Way Galaxy 🌍</p>
+    </div>
+    <hr style="width: 1000px; height: 2px; background-color: black; border: none;">
+    <p style="text-align: center; color: #eb6161; margin-top: 10px;">
+      &copy; 2025 Wander Bites. All rights reserved.
+    </p>
+  </center>
+
+</body>
+</html>

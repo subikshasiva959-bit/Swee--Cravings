@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Velvet Cake</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: #fffaf4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .cake-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .cake-title {
+      font-size: 36px;
+      margin: 10px 0;
+      color: #ff4081;
+    }
+
+    .cake-price {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #222;
+    }
+
+    .cake-description {
+      font-size: 18px;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    /* Buttons */
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      background-color: #ff4081;
+      color: white;
+      font-size: 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background-color: #e03572;
+    }
+
+    .cart-btn {
+      background-color: #4caf50;
+    }
+    .cart-btn:hover {
+      background-color: #3d8b40;
+    }
+
+    /* Hide checkbox */
+    #orderToggle {
+      display: none;
+    }
+
+    /* Success wording */
+    .success-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #2e7d32;
+      font-weight: bold;
+      background: #e8f5e9;
+      padding: 12px;
+      border-radius: 10px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    /* Show message when Buy Now is clicked */
+    #orderToggle:checked ~ .success-message {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="cake-image" src="Cake1.jpg" alt="Red Velvet Cake">
+    
+    <h1 class="cake-title">Red Velvet Cake</h1>
+    <div class="cake-price">Price: ₹399</div>
+    
+    <p class="cake-description">
+      Red velvet cake is a soft, moist cake with a hint of cocoa and a signature red color. 
+      It's typically layered with tangy cream cheese frosting, making it both rich and visually striking.
+    </p>
+
+    <!-- Hidden toggle for wording -->
+    <input type="checkbox" id="orderToggle">
+
+    <!-- Buy Now triggers wording -->
+    <label for="orderToggle" class="button">Buy Now</label>
+    
+    <!-- Wording after Buy Now -->
+    <div class="success-message">
+      🎉 Your order for <strong>Red Velvet Cake</strong> has been placed successfully!
+    </div>
+  </div>
+
+</body>
+</html>

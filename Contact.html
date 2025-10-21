@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: linear-gradient(135deg, #fffaf4, #ffe1ec);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .contact-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+      max-width: 520px;
+      width: 90%;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .contact-container h1 {
+      margin-bottom: 25px;
+      font-size: 34px;
+      color: #ff4081;
+      font-weight: bold;
+    }
+
+    .owner-info {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+    }
+
+    .info-item span {
+      font-size: 22px;
+      margin-right: 12px;
+      color: #ff4081;
+    }
+
+    .owner-info a {
+      color: #0d47a1;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .owner-info a:hover {
+      color: #ff4081;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <div class="owner-info">
+      <div class="info-item">
+        <span>👤</span>
+        <p><strong>Owner:</strong> John Doe</p>
+      </div>
+      <div class="info-item">
+        <span>📞</span>
+        <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+      </div>
+      <div class="info-item">
+        <span>📧</span>
+        <p><strong>Email:</strong> <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+      </div>
+      <div class="info-item">
+        <span>📍</span>
+        <p><strong>Address:</strong> 123, Sweet Street, Cake City, India</p>
+      </div>
+      <div class="info-item">
+        <span>⏰</span>
+        <p><strong>Hours:</strong> Mon – Sat, 9:00 AM – 8:00 PM</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
